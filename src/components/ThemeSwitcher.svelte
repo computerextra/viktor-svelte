@@ -107,7 +107,7 @@
 
 				<div class="space-y-4">
 					<div class="grid grid-cols-1 lg:grid-cols-3 gap-2">
-						{#each themes as theme}
+						{#each themes as theme (theme.name)}
 							<button
 								data-theme={theme.name}
 								type="button"

@@ -4,6 +4,6 @@
 
 <h1>Hallo</h1>
 
-{#each data.angebote as angeot}
+{#each data.angebote as angeot (angeot.id)}
 	{angeot.subtitle}
 {/each}

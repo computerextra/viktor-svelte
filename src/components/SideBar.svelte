@@ -25,7 +25,7 @@
 					<Dialog.CloseTrigger class="btn-icon preset-tonal"><XIcon /></Dialog.CloseTrigger>
 				</header>
 				<ul>
-					{#each Array.from(Array(10).keys()) as x}
+					{#each Array.from(Array(10).keys()) as x (x)}
 						<li>{x}</li>
 					{/each}
 				</ul>
