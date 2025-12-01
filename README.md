@@ -8,6 +8,8 @@ Everything you need to build a Svelte project, powered by [`sv`](https://github.
 
 <https://www.skeleton.dev/docs/svelte/framework-components/floating-panel>
 
+<https://prabhukirankonda.medium.com/integrating-auth-js-nextauth-and-prisma-with-sveltekit-bfdc54fb25b8>
+
 ## Creating a project
 
 If you're seeing this, you've probably already done this step. Congrats!

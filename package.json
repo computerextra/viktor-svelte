@@ -39,8 +39,12 @@
 		"vite": "^7.2.2"
 	},
 	"dependencies": {
+		"@auth/prisma-adapter": "^2.11.1",
+		"@auth/sveltekit": "^1.11.1",
 		"@prisma/adapter-mariadb": "^7.0.1",
 		"@prisma/client": "^7.0.1",
-		"lucide-svelte": "^0.555.0"
+		"lucide-svelte": "^0.555.0",
+		"next-auth": "^5.0.0-beta.30",
+		"nodemailer": "^7.0.11"
 	}
 }
