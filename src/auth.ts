@@ -1,9 +1,9 @@
 import { SvelteKitAuth } from "@auth/sveltekit";
 import Nodemailer from "@auth/sveltekit/providers/nodemailer";
-import { env } from "$env/dynamic/private";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import db from "$lib/prisma";
 import type { Adapter } from "@auth/sveltekit/adapters";
+import { env } from "./env";
 
 export const { handle, signIn, signOut } = SvelteKitAuth({
 	adapter: PrismaAdapter(db) as Adapter,
