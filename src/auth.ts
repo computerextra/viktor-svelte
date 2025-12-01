@@ -11,7 +11,7 @@ export const { handle, signIn, signOut } = SvelteKitAuth({
 		strategy: "database",
 		generateSessionToken: () => {
 			return crypto.randomUUID();
-		}
+		},
 	},
 	providers: [
 		Nodemailer({
@@ -20,8 +20,8 @@ export const { handle, signIn, signOut } = SvelteKitAuth({
 				port: env.EMAIL_SERVER_PORT,
 				auth: {
 					user: env.EMAIL_SERVER_USER,
-					pass: env.EMAIL_SERVER_PASSWORD
-				}
+					pass: env.EMAIL_SERVER_PASSWORD,
+				},
 			},
 			from: env.EMAIL_FROM,
 			normalizeIdentifier(identifier: string): string {
@@ -40,7 +40,7 @@ export const { handle, signIn, signOut } = SvelteKitAuth({
 
 				// Check the domain
 				// The Domain should be an organization one.
-				if (domain != env.ORG_MAIL_DOMAIN) {
+				if (domain !== env.ORG_MAIL_DOMAIN) {
 					throw new Error("Only Organization Email allowed");
 				}
 
@@ -50,7 +50,7 @@ export const { handle, signIn, signOut } = SvelteKitAuth({
 				}
 
 				return `${local}@${domain}`;
-			}
-		})
-	]
+			},
+		}),
+	],
 });
