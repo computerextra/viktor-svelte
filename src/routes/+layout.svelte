@@ -5,7 +5,7 @@
 	import ThemeSwitcher from "../components/ThemeSwitcher.svelte";
 	import SideBar from "../components/SideBar.svelte";
 
-	let { children, session } = $props();
+	let { children } = $props();
 	
 </script>
 
